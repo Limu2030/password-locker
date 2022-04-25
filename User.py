@@ -1,4 +1,5 @@
 from argparse import _AppendConstAction
+from ast import If
 
 from requests import delete
 
@@ -18,4 +19,9 @@ class User:
         User.user_menu.remove(self)
 
     @classmethod
-    def user_exit    
+    def find_by_password(cls, password):
+        for User in cls.user_menu:
+            if User.password == password:
+                return True
+        return False        
+
