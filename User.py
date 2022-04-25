@@ -8,5 +8,3 @@ class User:
         self.lastname = lastname
         self.username = username
         self.password = password
-
-     
