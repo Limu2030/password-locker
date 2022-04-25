@@ -14,4 +14,8 @@ class User:
     def save_User(self):
         User.user_menu.append(self)
 
-    
+    def delete_User(self):
+        User.user_menu.remove(self)
+
+    @classmethod
+    def user_exit    
