@@ -10,4 +10,11 @@ class Credentials:
 
     def delete_Credentials(self):
         Credentials.app_details.remove(self)
-        
+
+    @classmethod
+    def find_by_appname(cls, appname):
+        for Credentials in cls.app_details:
+            if Credentials.appname == appname:
+                return Credentials
+
+                
