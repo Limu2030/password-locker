@@ -1,5 +1,7 @@
 from argparse import _AppendConstAction
 
+from requests import delete
+
 
 class User:
     user_menu=[]
@@ -8,3 +10,8 @@ class User:
         self.lastname = lastname
         self.username = username
         self.password = password
+
+    def save_User(self):
+        User.user_menu.append(self)
+
+    
