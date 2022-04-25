@@ -30,5 +30,11 @@ class User:
         for User in cls.user_menu:
             if User.password == password:
                 return True
-        return False    
+        return False  
+
+    @classmethod
+    def display_users(cls):
+        return cls.user_menu    
+
+
 
