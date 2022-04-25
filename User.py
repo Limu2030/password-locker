@@ -25,3 +25,10 @@ class User:
                 return True
         return False        
 
+    @classmethod
+    def user_exit(cls, password):
+        for User in cls.user_menu:
+            if User.password == password:
+                return True
+        return False    
+
