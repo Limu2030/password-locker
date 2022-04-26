@@ -17,4 +17,13 @@ class Credentials:
             if Credentials.appname == appname:
                 return Credentials
 
-                
+    @classmethod
+    def credentials_exists(cls, appname):
+        for Credentials in cls.app_details:
+            if Credentials.appname == appname:
+                return True
+        return False
+
+    @classmethod 
+    def display_credentials(cls):
+        return cls.app_details                    
