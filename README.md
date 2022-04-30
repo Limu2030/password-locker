@@ -38,14 +38,16 @@ In your terminal:
        $ cd passwordlocker
        
 ### Running the Application
-To run the application, in your terminal: 
+To run the application: 
 
         $ ./run_application.py
 
 ### Testing the Application
-To run the tests for the class file: 
-        $ python3.8 test_Credentials.py
-        $ python3.8 test_User.py
+To run the tests: 
+
+        $ python3 test_Credentials.py
+
+        $ python3 test_User.py
 
 
 ## Technologies Used
