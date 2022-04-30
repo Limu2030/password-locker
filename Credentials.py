@@ -1,3 +1,5 @@
+from User import User 
+
 class Credentials: 
     app_details = []
     def __init__(self, appname,appusername, apppassword):
