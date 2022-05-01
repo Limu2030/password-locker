@@ -13,9 +13,9 @@ class User:
         User.user_menu.remove(self)
 
     @classmethod
-    def find_by_password(cls, password):
+    def find_by_username(cls, username):
         for User in cls.user_menu:
-            if User.password == password:
+            if User.username == username:
                 return True
         return False        
 
